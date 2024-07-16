@@ -302,7 +302,7 @@ echo '<div class="alert alert-danger" role="alert">Delete File Error.</div>';
 }
 }
 echo '<center>';
-echo '<button class="btn btn-Telegram" onclick="location.href=\'https://t.me/Team_R3DZ0N3\'">';echo '<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Telegram_2019_Logo.svg/800px-Telegram_2019_Logo.svg.png" style="height: 40px;" alt="Telegram Icon">';
+echo '<button class="btn btn-Telegram" onclick="location.href=\'https://t.me/xeonthread\'">';echo '<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Telegram_2019_Logo.svg/800px-Telegram_2019_Logo.svg.png" style="height: 40px;" alt="Telegram Icon">';
 echo ' </button>';
 echo '<br><br>';
 echo '</center>';
