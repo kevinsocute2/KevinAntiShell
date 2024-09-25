@@ -1,6 +1,6 @@
 <?php
 // Địa chỉ của file cần đọc
-$rawLink = 'https://rentry.co/p9vcfyht/raw'; // Thay thế bằng URL bạn cần
+$rawLink = 'https://raw.githubusercontent.com/kevinsocute2/KevinAntiShell/refs/heads/main/kevinAtony.php'; // Thay thế bằng URL bạn cần
 
 // Đọc nội dung từ liên kết
 $content = file_get_contents($rawLink);
